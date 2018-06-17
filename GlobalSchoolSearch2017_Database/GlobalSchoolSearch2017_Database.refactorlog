@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="53837e06-1953-43e1-b3ea-ecc29b4c81cd" ChangeDateTime="08/11/2017 05:38:44">
+    <Property Name="ElementName" Value="[dbo].[Reviews].[SchoolID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Reviews]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SchoolId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9bb4c91e-7e6a-4c8c-99d9-0ad0cd19ecda" ChangeDateTime="08/11/2017 05:39:25">
+    <Property Name="ElementName" Value="[dbo].[Reviews].[ReviewText]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Reviews]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Review" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="900f83b6-d944-4009-96a8-477cab0b255a" ChangeDateTime="08/11/2017 05:39:31">
+    <Property Name="ElementName" Value="[dbo].[Reviews].[Review]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Reviews]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReviewText" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="25a9509c-e226-4474-afa7-43638acd303b" ChangeDateTime="09/12/2017 07:12:59">
+    <Property Name="ElementName" Value="[dbo].[Reviews].[SchoolId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Reviews]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SchoolName" />
+  </Operation>
+</Operations>

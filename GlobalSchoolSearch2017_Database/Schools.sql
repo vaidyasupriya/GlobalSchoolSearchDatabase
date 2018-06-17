@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Schools]
+(
+	[SchoolId] INT NOT NULL IDENTITY (1,1) , 
+    [SchoolName] NVARCHAR(50) NOT NULL, 
+    [Address] NVARCHAR(100) NOT NULL, 
+    [Postcode] NVARCHAR(50) NOT NULL, 
+    [CityName] NVARCHAR(50) NOT NULL, 
+    [CountryName] NVARCHAR(50) NOT NULL, 
+    [Contact No.] NVARCHAR(20) NULL, 
+    [Alternate Contact No.] NVARCHAR(20) NULL, 
+    [Email] NVARCHAR(50) NULL, 
+    [Website] NVARCHAR(50) NULL, 
+    [Examination Board] NVARCHAR(50) NULL, 
+    [Type of School] NVARCHAR(50) NULL, 
+    [Admission Criteria] TEXT NULL, 
+    [Admission Start Date] DATE NULL, 
+    [Application Form] NVARCHAR(50) NULL, 
+    [Submission Date] DATE NULL, 
+    [Additional Information ] TEXT NULL, 
+    [Authorizer Email] NVARCHAR(50) NOT NULL, 
+    [Rating] FLOAT NULL, 
+    [Date of Updatation] DATE NOT NULL, 
+    CONSTRAINT [FK_Schools_Countries] FOREIGN KEY ([CountryName]) REFERENCES [Countries]([CountryName]), 
+    CONSTRAINT [FK_Schools_Cities] FOREIGN KEY ([CityName]) REFERENCES [Cities](CityName), 
+    PRIMARY KEY ([SchoolName])
+)
